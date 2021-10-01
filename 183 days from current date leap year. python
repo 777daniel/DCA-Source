@@ -1,0 +1,23 @@
+n=15
+o=n
+m="January"
+p=183
+k=["January","February","March","April","May","June","July","August","September",
+"Novomber","December"]
+d=[31,29,31,30,31,30,31,31,30,31,30,31] 
+for i in k:
+    if(i==m):
+        #print(k.index(i))
+        l=k.index(i)
+while(True):
+    if(p-(d[l]-n)>0):
+        yt=d[l]-n
+        p=p-yt
+        l=l+1
+    elif(p==0):
+        print(k[l], d[l])
+        break
+    else:
+        print(k[l],n+p)
+        break
+    n=0
